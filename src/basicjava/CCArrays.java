@@ -85,16 +85,15 @@ public class CCArrays {
 		System.out.println("new array");
 		System.out.println(Arrays.toString(strArray));
 		int lengthOfArray = strArray.length;
-		int index = 0;
 		
-		while (index < lengthOfArray) {
+		for (int i =0; i < lengthOfArray; i++) {
 			Arrays.sort(strArray, String.CASE_INSENSITIVE_ORDER);
 
 			
 
 
 		
-		index++;
+		
 	}
 		
 }
