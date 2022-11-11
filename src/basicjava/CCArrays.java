@@ -3,10 +3,28 @@ import java.util.Arrays;
 
 public class CCArrays {
 	public static void replace(char[] charArray, char toReplace, char replaceWith) {
+
 		
 		
 		int index = 0;
 		while (index < charArray.length) {
+			
+			if (Character.toUpperCase(charArray[index]) == Character.toUpperCase(toReplace)) {
+				
+				
+				charArray[index] = replaceWith;
+				index++;
+			}
+			else {
+				index++;
+			}
+			
+		}
+		}
+			
+			
+			/*
+		}
 		//	String newlist = new String(charArray);
 			
 		 //   int newlistlength = newlist.length();
@@ -30,7 +48,7 @@ public class CCArrays {
 			        char lowerCase = Character.toLowerCase(a);
 			        System.out.print(upperCase);
 			        System.out.print(lowerCase);
-			        */
+			        
 			        
 								
 
@@ -43,8 +61,8 @@ public class CCArrays {
 		}
 		
 	
-	/*
-	 * 	if(toReplace != replaceWith) {
+	
+	  	if(toReplace != replaceWith) {
 		String newlsit = new String(charArray);
 	    int newlistlength = newlsit.length();
 	    char arr[] = newlsit.toCharArray();
