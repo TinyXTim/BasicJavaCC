@@ -5,9 +5,9 @@ public class CCArrays {
 	public static void replace(char[] charArray, char toReplace, char replaceWith) {
 
 		
-		
+		int lengthofchar = charArray.length;
 		int index = 0;
-		while (index < charArray.length) {
+		while (index < lengthofchar) {
 			
 			if (Character.toUpperCase(charArray[index]) == Character.toUpperCase(toReplace)) {
 				
